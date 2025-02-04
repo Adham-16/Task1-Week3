@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-between align-items-center w-100"
+    >
+      <div class="search w-50">
+        <input
+          class="form-control w-75 d-inline-block"
+          type="text"
+          id="searchQuery"
+          placeholder="Search for products"
+          oninput="searchProducts()"
+        />
+        <button onclick="searchProducts()">Search</button>
+      </div>
+      <div class="Cart d-flex gap-3">
+        <a id="Cart" href="index.html" class="btn">Home</a>
+        <a id="Cart" href="cart.html" class="btn">Cart</a>
+      </div>
+      <div class="logout-btn">
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </div>
+    <div class="cart-container mt-5">
+      <h2>Shopping Cart</h2>
+      <div class="mt-5" id="cartItems"></div>
+      <div class="total fs-3 btn mt-3">
+        Total: $<span id="totalPrice">0.00</span>
+      </div>
+    </div>
+    <!-- ********************************************* -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

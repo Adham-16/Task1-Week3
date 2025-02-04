@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container my-4 text-center">
+      <div
+        class="container d-flex justify-content-between align-items-center w-100"
+      >
+        <div class="search w-50">
+          <input
+            class="form-control w-75 d-inline-block"
+            type="text"
+            id="searchQuery"
+            placeholder="Search for products"
+            oninput="searchProducts()"
+          />
+          <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="Cart d-flex gap-3">
+          <a id="Cart" href="index.html" class="btn">Home</a>
+          <a id="Cart" href="cart.html" class="btn">Cart</a>
+        </div>
+
+        <div class="logout-btn">
+          <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+      </div>
+      <h1 class="my-5">Products List</h1>
+      <div id="productList"></div>
+      <div id="pagination" class="my-4"></div>
+    </div>
+    <!-- ********************************************* -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
