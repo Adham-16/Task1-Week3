@@ -116,6 +116,6 @@ if (!localStorage.getItem("user")) {
 }
 
 document.getElementById("logoutBtn").addEventListener("click", function () {
-  localStorage.removeItem("user");
+  localStorage.removeItem("loggedIn");
   window.location.href = "login.html";
 });

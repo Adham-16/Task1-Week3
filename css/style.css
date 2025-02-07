@@ -101,19 +101,6 @@ body {
   background-color: #b746378b;
   color: black;
 }
-.product button.Delete {
-  background-color: #b74637;
-  color: #fff;
-  border: none;
-  padding: 8px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 0.9rem;
-}
-.product button.Delete:hover {
-  color: black;
-  background-color: #b746378b;
-}
 .page-btn {
   background-color: #1e2e3f;
   color: #fff;
@@ -164,3 +151,16 @@ body {
   color: black;
 }
 /* ***********************************************************************/
+@media (max-width: 576px) {
+  body > div.container:first-child {
+    max-width: 650px;
+  }
+  body > div.container:first-child div.container {
+    max-width: 650px;
+  }
+}
+@media (max-width: 998px) {
+  .search button {
+    display: none;
+  }
+}

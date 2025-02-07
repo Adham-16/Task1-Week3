@@ -1,0 +1,42 @@
+.user-icon i {
+  color: #f4836c;
+}
+.container .card h3 {
+  color: #f4836c;
+}
+.container .card button[type="submit"] {
+  background-color: #f4836c;
+  border: none;
+}
+body {
+  background-color: rgb(252, 232, 219);
+  background-image: radial-gradient(
+      circle at top right,
+      rgb(252, 117, 95) 7%,
+      transparent 5%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgb(251, 131, 105) 14%,
+      transparent 10%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgb(251, 157, 132) 21%,
+      transparent 15%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgb(249, 183, 159) 28%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgb(248, 198, 175) 35%,
+      transparent 25%
+    );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
