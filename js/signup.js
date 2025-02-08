@@ -1,3 +1,5 @@
+
+// *************************************************************************
 document.getElementById("signupForm").addEventListener("submit", function (event) {
     event.preventDefault();
     const name = document.getElementById("name").value.trim();
@@ -8,5 +10,9 @@ document.getElementById("signupForm").addEventListener("submit", function (event
         return;
     }
     localStorage.setItem("user", JSON.stringify({ name, email, password }));
+    alert("Account created successfully! Please log in.");
     window.location.href = "login.html";
 });
+
+
+
