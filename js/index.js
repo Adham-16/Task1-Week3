@@ -112,7 +112,9 @@ function addToCart(productId) {
 }
 
 if (!localStorage.getItem("user")) {
-  window.location.href = "login.html";
+  window.location.href = "signup.html"; 
+} else if (localStorage.getItem("loggedIn") === "true") {
+  window.location.href = "index.html";
 }
 
 document.getElementById("logoutBtn").addEventListener("click", function () {
